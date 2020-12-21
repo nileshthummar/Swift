@@ -110,3 +110,14 @@ RectangleKit.shared.setDebugDelegate({(error) in
 Select Project Target → Edit Schema → Archive → Post-actions → Press “+” → New Run Script Action.
 
 ```
+
+
+# Assumption:
+
+```
+# Assumed that output figure is included all ractangles and not only vertical rectangle.
+# Base on given output figure#2 and figure#4, It's not clear that, 
+it's drawn on top of Input figure or need to return all rectangles 
+including small rectangles created after add vertical rectangles.
+
+```
