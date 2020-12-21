@@ -104,6 +104,16 @@ RectangleKit.shared.setDebugDelegate({(error) in
    but we can easly change to server URL if needed in future. 
 ```
 
+# Build and run the code 
+
+```
+# Open "RectangleKitDemo.xcodeproj" 
+# Build and run the Demo App. and it will auto build RectangleKit framework. 
+# RectangleKitDemo Application included RectangleKit Reference and In build dependency. 
+
+```
+
+
 # Make it universal framework
 
 ```
