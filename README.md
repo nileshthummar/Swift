@@ -29,7 +29,7 @@ B. Each tile of 3 circles contains the 3 numbers x, y, and z (in any order), whe
 ### Output: 
 ##### return true if two circles are adjacent if they appear immediately next to each other in the hexagonal grid. The circles do not need to be part of the same tile to be considered adjacent. 
 
-###Algorithm :
+### Algorithm :
 ##### Time Complexity : O(n). Space Complexity : O(1). Iterate though grid and find first circle (will take O(n)). check all six adjacent circle and compare with Circle2 if match return true else return false. 
 
 ### Example: 
@@ -52,10 +52,15 @@ func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
 ### Output: 
 ##### findAdjacentCircles will return array of circles that has the above properties A and B.  generateGrids will return array of tiles that generate a variety of results, in a way that guarantees there is only 1 circle left over.
 
-###Algorithm :
+### Algorithm :
 #### findAdjacentCircles 
 ##### Time Complexity : O(n^2). Space Complexity : O(n). 
 ##### For avoid O(n^3) keeping dictinary for all numbers in array(will allow constant time lookup) and Iterate for other two number product. will check if product exist in dictinary. if exist all three Circle will add in Output array. and set that particular index as visited = true to avoid reuse it.  
+
+
+#### generateGrids 
+##### Time Complexity : O(6^n). Space Complexity : O(1). 
+##### Using DFS. for Each Circle there will be six option to put as adjacent circle(left, right, top-left,top-right, bottom-left, bottom-right). for generate a variety of results checking all possible combination and genrating new Grid. it will add to output array when there is no more tile in tiles array.   
 
 ### Example: 
 
