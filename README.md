@@ -26,6 +26,11 @@ B. Each tile of 3 circles contains the 3 numbers x, y, and z (in any order), whe
 ### Output: 
 ##### return true if two circles are adjacent if they appear immediately next to each other in the hexagonal grid. The circles do not need to be part of the same tile to be considered adjacent. 
 
+###Algorithm :
+##### Time Complexity : O(n). Space Complexity : O(1). Iterate though grid and find first circle (will take O(n)). check all six adjacent circle and compare with Circle2 if match return true else return false. 
+
+
+
 ### RectangleKit written in Swift.
 
 #### Function Defination 
