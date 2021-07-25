@@ -13,13 +13,18 @@ B. Each tile of 3 circles contains the 3 numbers x, y, and z (in any order), whe
 4. Please comment your code. Your code comments should include a description the process you followed, which reference sources you used, if any, and how much time you spent on the exercise. Note that clarity, maintainability, and testability will be considered when evaluating your solution.
 ```
 
-## RectangleKit Framework
+## AdobeHexagonalKit Framework
+
+### Write a method that determines whether two circles are adjacent. Two circles are adjacent if they appear immediately next to each other in the hexagonal grid. The circles do not need to be part of the same tile to be considered adjacent. (How you identify a particular circle is up to you and your design.)
+```
+ func isAdjacent(_ circel1:HexCircle, _ circel2:HexCircle, _ grid:[[HexCircle]]) -> Bool
+```
 
 ### Input: 
-##### List of zero or more rectangles, each rectangle has area greater than zero, each rectangle sits directly next to its neighbors on a common horizontal axis (i.e. there is no vertical gap between rectangles), and all rectangles sit flush on the common horizontal axis.
+##### Two circles 
 
 ### Output: 
-##### Shortest list of zero or more rectangle, each rectangle has area greater than zero, each rectangle sits directly on top of its neighbors (i.e. there is no horizontal gap between rectangles).  The output rectangles cover the same space as the input rectangles. By this we mean that the output rectangles have the same area as the input rectangles, and the silhouette / outline of the collection of output rectangles is the same as the silhouette / outline of the collection of input rectangle.
+##### return true if two circles are adjacent if they appear immediately next to each other in the hexagonal grid. The circles do not need to be part of the same tile to be considered adjacent. 
 
 ### RectangleKit written in Swift.
 
