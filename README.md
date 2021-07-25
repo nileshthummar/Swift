@@ -55,6 +55,7 @@ func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
 ###Algorithm :
 #### findAdjacentCircles 
 ##### Time Complexity : O(n^2). Space Complexity : O(n). 
+##### For avoid O(n^3) keeping dictinary for all numbers in array(will allow constant time lookup) and Iterate for other two number product. will check if product exist in dictinary. if exist all three Circle will add in Output array. and set that particular index as visited = true to avoid reuse it.  
 
 ### Example: 
 
