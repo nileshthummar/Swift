@@ -65,7 +65,7 @@ func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
 ### Example: 
 
 ```
-let isAdjacent = AdobeHexagonalKit.shared.isAdjacent(circle1,circle2)
-print(isAdjacent)
+let tiles = AdobeHexagonalKit.shared.findAdjacentCircles(circles)
+let grids = AdobeHexagonalKit.shared.generateGrids(tiles)
 
 ```
