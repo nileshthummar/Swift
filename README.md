@@ -4,7 +4,8 @@
 ## Requirement : 
 
 ```
-Here is a screenshot from an iOS app. There is an arrangement of 19 circles in a hexagonal grid, and each circle contains a number. 
+Here is a screenshot from an iOS app. There is an arrangement of 19 circles in a hexagonal grid, 
+and each circle contains a number. 
 The screenshot contains example numbers with the following properties:
 A. The grid can be divided into 6 tiles of 3 adjacent circles (with 1 circle left over).
 B. Each tile of 3 circles contains the 3 numbers x, y, and z (in any order), where x times y equals z.
