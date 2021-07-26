@@ -87,5 +87,19 @@ func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
 
 ```
 let grids = AdobeHexagonalKit.shared.generateGrids(tiles)
-
 ```
+
+### Error Handling
+
+#### for now Errors are printed in log. we can update base on requirement and show to user as needed. 
+
+
+
+### Assumption/Notes
+
+#### Assumed that input with valid 19 Circles. that can can be divided into 6 tiles of 3 adjacent circles (with 1 circle left over).
+#### If valid # of circles < 19, it will return empty tiles and empty grid.
+#### if valid # of circles > 19, it will take valid 19 circles and return 6 tiles of 3 adjacent circles and 1 tile of 1 circle.
+#### we can udpate this logic base on requirement after discussed with the team.
+
+
