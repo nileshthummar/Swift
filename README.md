@@ -117,3 +117,20 @@ let grids = AdobeHexagonalKit.shared.generateGrids(tiles)
 
 
   
+
+
+# AdobeDemo Code Files
+
+```
+# ContentView.swift:Main View File 
+# HomeViewModel.swift: View Model class for Main View
+# HexCircle.swift: Model file for Main View Dummy Data.
+# "Utilities" Group for Defined different Error types. 
+# "Network" Group for Network call, for now used for read mock.json dummy data file. 
+   but we can easly change to server URL if needed in future. 
+   
+ # AdobeHexagonalKit.swift : Deifned main algorithm logic. there is three public method "isAdjacent", "findAdjacentCircles", and "generateGrids"
+  "isAdjacent" for requirement "Write a method that determines whether two circles are adjacent. Two circles are adjacent if they appear immediately next to each other in the hexagonal grid. The circles do not need to be part of the same tile to be considered adjacent. (How you identify a particular circle is up to you and your design.)"
+  
+  "findAdjacentCircles" and "generateGrids" for requirement "Write a method that procedurally generates a grid that has the above properties A and B. The method should output 19 numbers and should determine the way they are laid out. Can you efficiently generate a variety of results, in a way that guarantees there is only 1 circle left over?"
+```
