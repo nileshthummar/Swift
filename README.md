@@ -1,5 +1,5 @@
 
-# Hexagonal Grid
+# AdobeDemo - Hexagonal Grid
 
 ## Requirement : 
 
