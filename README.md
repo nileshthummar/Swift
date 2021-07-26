@@ -41,22 +41,43 @@ print(isAdjacent)
 ```
 
 ### Write a method that procedurally generates a grid that has the above properties A and B. The method should output 19 numbers and should determine the way they are laid out. Can you efficiently generate a variety of results, in a way that guarantees there is only 1 circle left over?
+
+#### findAdjacentCircles
 ```
 func findAdjacentCircles(_ circles : [HexCircle]) -> [[HexCircle]]
-func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
+
 ```
 
 ### Input: 
-##### findAdjacentCircles : array of circles. generateGrids : array of circles array(array of tiles)
+##### findAdjacentCircles : array of circles.
 
 ### Output: 
-##### findAdjacentCircles will return array of circles that has the above properties A and B.  generateGrids will return array of tiles that generate a variety of results, in a way that guarantees there is only 1 circle left over.
+##### findAdjacentCircles will return array of circles that has the above properties A and B.  
 
 ### Algorithm :
 #### findAdjacentCircles 
 ##### Time Complexity : O(n^2). Space Complexity : O(n). 
 ##### For avoid O(n^3) keeping dictinary for all numbers in array(will allow constant time lookup) and Iterate for other two number product. will check if product exist in dictinary. if exist all three Circle will add in Output array. and set that particular index as visited = true to avoid reuse it.  
 
+### Example: 
+
+```
+let tiles = AdobeHexagonalKit.shared.findAdjacentCircles(circles)
+
+```
+
+#### generateGrids
+
+```
+func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
+```
+
+
+### Input: 
+##### generateGrids : array of circles array(array of tiles)
+
+### Output: 
+##### generateGrids will return array of tiles that generate a variety of results, in a way that guarantees there is only 1 circle left over.
 
 #### generateGrids 
 ##### Time Complexity : O(6^n). Space Complexity : O(1). 
@@ -65,7 +86,6 @@ func generateGrids(_ tiles :  [[HexCircle]]) -> [[[HexCircle]]]
 ### Example: 
 
 ```
-let tiles = AdobeHexagonalKit.shared.findAdjacentCircles(circles)
 let grids = AdobeHexagonalKit.shared.generateGrids(tiles)
 
 ```
